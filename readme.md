@@ -26,9 +26,10 @@ This monolithic project has two main components: a .Net application that runs as
 
 ## Starting the App
 
-* Download the Docker images for [RabbitMQ](https://hub.docker.com/_/rabbitmq) or (`docker pull rabbitmq`) and [MSSQL Server](https://hub.docker.com/_/microsoft-mssql-server) (or `docker pull mcr.microsoft.com/mssql/server`)
+* Download the Docker images for [RabbitMQ](https://hub.docker.com/_/rabbitmq) (or `docker pull rabbitmq`) and [MSSQL Server](https://hub.docker.com/_/microsoft-mssql-server) (or `docker pull mcr.microsoft.com/mssql/server`)
 * Clone the repository
 * Navigate to `DeviceManager/ClientApp`
+* Run `npm install`
 * Create DB: In the CLI or Package Manager Console, run `npm run db:create` to create an SQL Server container.
 * Create RabbitMQ Server: In the CLI or Package Manager Console, run `npm run rabbit:create` to create a RabbitMQ messaging server.
 * Run `Update-Database` in Package Manager Console to apply database migrations.
